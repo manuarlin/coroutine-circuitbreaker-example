@@ -1,0 +1,7 @@
+resilience4j.circuitbreaker:
+  instances:
+    myCircuitBreaker:
+      slidingWindowSize: 2
+      minimum-number-of-calls: 1
+      failureRateThreshold: 50
+      recordResultPredicate: com.example.coroutinecircuitbreakerexample.RecordResultPredicate
